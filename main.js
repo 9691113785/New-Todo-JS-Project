@@ -1,9 +1,18 @@
 
 
 const popupadd = document.querySelector('#addNewList');
+
 const defaultText = document.querySelector('.noTodo');
+
 const blur = document.querySelector('.blur');
+
 const popupaddBtn = document.querySelector('#add-new-list');
+
+
+
+
+
+
 
 
 
@@ -12,6 +21,13 @@ popupaddBtn.addEventListener("click", () => {
     blur.style.filter = "blur(8px)";
     defaultText.style.display = "none";
 });
+
+
+
+
+
+
+
 
 const closePopUp = document.querySelector('.close');
 
@@ -23,17 +39,36 @@ closePopUp.addEventListener("click", () => {
 
 
 
+
+
+
+
+
+
+
+
 const inputpop1 = document.querySelector('#inputBoxList');
+
 const inputItem = document.querySelector('#inputBoxItem');
+
 const addNewItemPopUp = document.querySelector('#add-new-item-box');
+
 const addNewListBtn = document.querySelector('.add-new-list-btn');
+
 const addNewItemBtn = document.querySelector('.add-new-item-btn');
+
 const header = document.querySelector('.header');
+
 const mainflexcontainer = document.querySelector('.boxes');
+
 const containerSingle = document.querySelector(".container");
+
 const triptoparis = document.querySelector(".triptoparis");
+
 const singlecardcontainer = document.querySelector('.singlecardcontainer');
+
 const listClose = document.getElementById("listClose");
+
 
 let arrayOfObjectsOfCards = [];
 
@@ -88,6 +123,7 @@ function createCard() {
 
                 let singleCard = document.createElement('div');
                 singleCard.className = "single-card";
+
                 singleCard.className = "single-style";
                 singleCard.appendChild(selDiv);
                 arrayOfObjectsSingle.unshift(singleCard);
@@ -138,9 +174,9 @@ let arrayOfObjectsSingle = [];
 
 function backToMainList(e) {
     mainflexcontainer.style.display = "flex";
-    arrayOfObjectsSingle[0].classList.remove("single-style");
-    mainflexcontainer.appendChild(arrayOfObjectsSingle[0]);
-    arrayOfObjectsSingle = [];
+    // arrayOfObjectsSingle[0].classList.remove("single-style");
+    // mainflexcontainer.appendChild(arrayOfObjectsSingle[0]);
+    // arrayOfObjectsSingle = [];
     header.style.display = "flex";
 
     containerSingle.style.display = "none";

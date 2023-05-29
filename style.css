@@ -50,12 +50,12 @@ body {
     row-gap: 2.5rem;
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .box {
     min-height: 380px;
-    width: 250px;
+    width: 24%;
     border: 2px solid #e84343;
     border-radius: 0.5rem;
     margin: 3rem;
@@ -63,10 +63,16 @@ body {
     box-shadow: 10px 10px 10px #0a0a0a29;
 }
 
-.singlecardcontainer {
+/* .singlecardcontainer {
     display: flex;
     justify-content: center;
+} */
+.single-style{
+    display: flex;
+    justify-content: space-around;
 }
+
+
 
 .subhead {
     text-align: center;
@@ -330,22 +336,22 @@ body {
     .list-styling {
         list-style-type: none;
     }
-    .tasklistitem {
+    /* .tasklistitem {
         font-size: 1.5rem;
         text-align: center;
         display: none;
-    }
-    .boxes {
+    } */
+    /* .boxes {
         padding: 0rem;
         display: flex;
         margin: auto;
         flex-direction: column;
         width: 100%;
         row-gap: 0;
-    }
-    .boxes i {
+    } */
+    /* .boxes i {
         display: none;
-    }
+    } */
     .single-style div {
         min-height: 350px;
         height: 350px;
@@ -356,10 +362,10 @@ body {
     .single-style {
         margin: auto;
     }
-    .single-style div .tasklistitem {
+    /* .single-style div .tasklistitem {
         display: block;
-    }
-    .box {
+    } */
+    /* .box {
         max-height: 80px;
         min-height: 80px;
         height: 80px;
@@ -367,6 +373,9 @@ body {
         margin: auto;
         margin-bottom: 1rem;
         background-color: #fff;
+    } */
+    .box{
+        width: 90%;
     }
     .subhead {
         text-align: left;
@@ -470,5 +479,11 @@ body {
     }
     .aiway {
         margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1120px) {
+    .box{
+        width:35%
     }
 }
